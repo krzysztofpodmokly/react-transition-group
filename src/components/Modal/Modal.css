@@ -14,11 +14,11 @@
 }
 
 .ModalOpen {
-    animation: openModal .5s ease-out forwards;
+    animation: openModal .4s ease-out;
 }
 
 .ModalClosed {
-    animation: closeModal .5s ease-out forwards;
+    animation: closeModal 1s ease-out;
 }
 
 @keyframes openModal {
