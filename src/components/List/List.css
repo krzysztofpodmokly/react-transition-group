@@ -20,3 +20,37 @@
 .ListItem:active {
     background-color: #ccc;
 }
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: all .3s ease-out;
+}
+
+.fade-exit {
+    opacity: 1
+}
+
+.fade-exit-active {
+    animation: fadeOutRight 2s ease-out forwards
+}
+
+@keyframes fadeOutRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    10% {
+        transform:translateX(-10vw);
+        opacity: .2;
+    }
+
+    100% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+}
